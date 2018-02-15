@@ -41,7 +41,7 @@ const initialCalendarState = {
   },
 }
 
-function calender(state = initialCalendarState, action) {
+function calendar(state = initialCalendarState, action) {
 	const { day, recipe, meal } = action
 
 	switch(action.type) {
@@ -65,3 +65,5 @@ function calender(state = initialCalendarState, action) {
 			return state
 	}
 }
+
+export default calendar
